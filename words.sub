@@ -1,0 +1,15 @@
+# words.sub
+universe = vanilla
+executable = process.sh
+
+arguments = $(play)
+
+transfer_input_files = $(play)
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+
+output = logs/$Fn(play).out
+error = logs/$Fn(play).err
+log = logs/$Fn(play).log
+
+queue play from play_list.txt
