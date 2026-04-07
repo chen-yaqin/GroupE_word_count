@@ -1,0 +1,4 @@
+JOB CountWords works.sub
+SCRIPT PRE CountWords pre.sh
+SCRIPT POST CountWords post.sh
+
